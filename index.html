@@ -45,9 +45,24 @@
 
             #title-right > img {
                 border-radius: 50%;
+                width:100px;
+            }
+            
+            #title-right > img:hover {
+                animation: shake 0.5s;
+                animation-iteration-count: infinite;
             }
 
-            @media only screen and (min-width: 800px) {
+            @keyframes shake {
+                0% { transform: translate(1px, 1px) rotate(0deg); }
+                20% { transform: translate(-2px, 0px) rotate(1deg); }
+                40% { transform: translate(1px, -1px) rotate(1deg); }
+                60% { transform: translate(-2px, 1px) rotate(0deg); }
+                80% { transform: translate(-1px, -1px) rotate(1deg); }
+                100% { transform: translate(1px, -2px) rotate(-1deg); }
+            }
+
+            @media only screen and (min-width: 1100px) {
                 #content {
                     margin-left: 100px;
                     margin-right: 100px;
@@ -165,7 +180,7 @@
                 </div>
             </div>
             <div id="title-right">
-                <img src="profile.png" style="width:100px">
+                <img src="profile.png">
             </div>
         </div>
         <div id="content">
@@ -185,74 +200,65 @@
             <div id="content-right">
                 <div id="post">
                     <h2>Skills</h2>
-                    <ul>
-                        <li>
-                            Programming:
-                            <ul>
-                                <li>C#
-                                    <div class="tooltip">
-                                        <span class="fa fa-info-circle tooltip-indicator"></span>
-                                        <span class="tooltiptext">As my mayor language interacting with the .NET libraries</span>
-                                    </div>
-                                </li>
-                                <li>Javascript</li>
-                                <li>PL/SQL
-                                    <div class="tooltip">
-                                        <span class="fa fa-info-circle tooltip-indicator"></span>
-                                        <span class="tooltiptext">Building database objects and procedures to satisfy customer requirements</span>
-                                    </div>
-                                </li>
-                            </ul>
-                        </li>
                         <br />
-                        <li>
-                            Frameworks:
-                            <ul>
-                                <li>.NET Core</li>
-                                <li>.NET Framework</li>
-                                <li>Xamarin.Forms
-                                    <div class="tooltip">
-                                        <span class="fa fa-info-circle tooltip-indicator"></span>
-                                        <span class="tooltiptext">Targeting Android and iOS devices</span>
-                                    </div>
-                                </li>
-                            </ul>
-                        </li>
+                        Programming:
+                        <ul>
+                            <li>C#
+                                <div class="tooltip">
+                                    <span class="fa fa-info-circle tooltip-indicator"></span>
+                                    <span class="tooltiptext">As my mayor language interacting with the .NET libraries</span>
+                                </div>
+                            </li>
+                            <li>Javascript</li>
+                            <li>PL/SQL
+                                <div class="tooltip">
+                                    <span class="fa fa-info-circle tooltip-indicator"></span>
+                                    <span class="tooltiptext">Building database objects and procedures to satisfy customer requirements</span>
+                                </div>
+                            </li>
+                        </ul>
                         <br />
-                        <li>
-                            Tooling:
-                            <ul>
-                                <li>Linux shell</li>
-                                <li>Git</li>
-                                <li>Jenkins
-                                    <div class="tooltip">
-                                        <span class="fa fa-info-circle tooltip-indicator"></span>
-                                        <span class="tooltiptext">Creating pipelines to automate builds and deployments</span>
-                                    </div>
-                                </li>
-                                <li>AppCenter
-                                    <div class="tooltip">
-                                        <span class="fa fa-info-circle tooltip-indicator"></span>
-                                        <span class="tooltiptext">Used to compile Xamarin builds</span>
-                                    </div>
-                                </li>
-                                <li>Firebase</li>
-                            </ul>
-                        </li>
+                        Frameworks:
+                        <ul>
+                            <li>.NET Core</li>
+                            <li>.NET Framework</li>
+                            <li>Xamarin.Forms
+                                <div class="tooltip">
+                                    <span class="fa fa-info-circle tooltip-indicator"></span>
+                                    <span class="tooltiptext">Targeting Android and iOS devices</span>
+                                </div>
+                            </li>
+                        </ul>
                         <br />
-                        <li>
-                            Languages:
-                            <ul>
-                                <li>Spanish
-                                    <div class="tooltip">
-                                        <span class="fa fa-info-circle tooltip-indicator"></span>
-                                        <span class="tooltiptext">This is my mother tongue</span>
-                                    </div>
-                                </li>
-                                <li>English</li>
-                            </ul>
-                        </li>
-                    </ul>
+                        Tooling:
+                        <ul>
+                            <li>Linux shell</li>
+                            <li>Git</li>
+                            <li>Jenkins
+                                <div class="tooltip">
+                                    <span class="fa fa-info-circle tooltip-indicator"></span>
+                                    <span class="tooltiptext">Creating pipelines to automate builds and deployments</span>
+                                </div>
+                            </li>
+                            <li>AppCenter
+                                <div class="tooltip">
+                                    <span class="fa fa-info-circle tooltip-indicator"></span>
+                                    <span class="tooltiptext">Used to compile Xamarin builds</span>
+                                </div>
+                            </li>
+                            <li>Firebase</li>
+                        </ul>
+                        <br />
+                        Languages:
+                        <ul>
+                            <li>Spanish
+                                <div class="tooltip">
+                                    <span class="fa fa-info-circle tooltip-indicator"></span>
+                                    <span class="tooltiptext">This is my mother tongue</span>
+                                </div>
+                            </li>
+                            <li>English</li>
+                        </ul>
                 </div>
             </div>
         </div>
